@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Learning JavaScript</title>
-  </head>
 
-  <body>
-    <div class="container">
-    <header>
-      <div>
-        <nav id="nav">
-          <ul>
-            <li><a href="#section1" class="active">Section 1</a></li>
-            <li><a href="#section2" class="active">Section 2</a></li>
-            <li><a href="#section3" class="active">Section 3</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <title>Learning JavaScript</title>
+</head>
 
-    <div id="pagetitle"><h1>JavaScript course second part</h1></div>
+<body>
+  <header id="master">
+    <div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#section1" class="active">Section 1</a></li>
+          <li><a href="#section2" class="active">Section 2</a></li>
+          <li><a href="#section3" class="active">Section 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <div id="pagetitle">
+    <p><h1>JavaScript course second part</h1></p>
+  </div>
+
+  <div class="container">
     <section id="section1" class="section clear">
-     <!-- Paintings here-->
-      <div id="paintings">
+      <!-- Paintings here-->
+      <div class="wrap">
         <p>
-            <div class="description">Andrew Wyeth: Christina's World</div>
-          <img
-            src="https://live.staticflickr.com/6003/6198741820_ebb42d5f9c_b.jpg"
-            width="200"
-          />
+        <div class="description">Andrew Wyeth: Christina's World</div>
+        <br>
+        <img src="https://live.staticflickr.com/6003/6198741820_ebb42d5f9c_b.jpg" width="200" />
+        <div class="content">
+          <p>
+            Christina's World is a 1948 painting by American painter Andrew Wyeth and one of the best-known American
+            paintings of the mid-20th century. It is a tempera work done in a realist style, depicting a woman
+            semi-reclining on the ground in a treeless, mostly tawny field, looking up at a gray house on the horizon; a
+            barn and various other small outbuildings are adjacent to the house. It is owned by the Museum of Modern Art
+            in New York as part of its permanent collection.
+            Contents
+          </p>
+        </div>
         </p>
         <p>
-            <div class="description">Frederick W. MacMonnies: Self-Portrait</div>
-          <img
-            src="https://live.staticflickr.com/5167/5340625178_8e183e72b7_b.jpg"
-            width="200"
-          />
+        <div class="description">Frederick W. MacMonnies: Self-Portrait</div>
+        <img src="https://live.staticflickr.com/5167/5340625178_8e183e72b7_b.jpg" width="200" />
         </p>
       </div>
     </section>
 
     <section id="section2" class="section">
       <!-- Drawings here-->
-      <div id="drawings">
+      <div class="wrap">
         <p>
-            <div class="description">Leonardo da Vinci: Head of a Young Woman </div>
-          <img
-            src="https://s32625.pcdn.co/wp-content/uploads/2017/06/HeadofYoungWomenLeonardodaVinci.jpg.webp"
-            width="200"
-          />
+        <div class="description">Leonardo da Vinci: Head of a Young Woman </div>
+        <img src="https://s32625.pcdn.co/wp-content/uploads/2017/06/HeadofYoungWomenLeonardodaVinci.jpg.webp"
+          width="200" />
         </p>
         <p>
-            <div class="description">Michelangelo Buonarotti: Head of a Young Woman</div>
-          <img
-            src="https://s32625.pcdn.co/wp-content/uploads/2017/06/HeadofYoungMan_Michelangelo.jpg.webp"
-            width="200"
-          />
+        <div class="description">Michelangelo Buonarotti: Head of a Young Woman</div>
+        <img src="https://s32625.pcdn.co/wp-content/uploads/2017/06/HeadofYoungMan_Michelangelo.jpg.webp" width="200" />
         </p>
       </div>
     </section>
-<!-- Sculptures -->
-<section id="section3" class="section">
-  <!-- Drawings here-->
-  <div id="sculptures">
-    <p>
+    <!-- Sculptures -->
+    <section id="section3" class="section">
+      <!-- Drawings here-->
+      <div clas="wrap">
+        <p>
         <div class="description">Terracotta Warriors (late 3rd century BCE)</div>
-      <img
-        src="https://mymodernmet.com/wp/wp-content/uploads/2017/08/Famous-Sculpture-Terracotta-Warriors.jpg"
-        width="200"
-      />
-    </p>
-    <p>
+        <img src="https://mymodernmet.com/wp/wp-content/uploads/2017/08/Famous-Sculpture-Terracotta-Warriors.jpg"
+          width="200" />
+        </p>
+        <p>
         <div class="description">Laocoön and His Sons (c. 323 BCE – 31 CE)</div>
-      <img
-        src="https://mymodernmet.com/wp/wp-content/uploads/2017/08/laocoon-and-his-sons-statue-1.jpg"
-        width="200"
-      />
-    </p>
-  </div>
-</section>
+        <img src="https://mymodernmet.com/wp/wp-content/uploads/2017/08/laocoon-and-his-sons-statue-1.jpg"
+          width="200" />
+        </p>
+      </div>
+    </section>
 
-       <!-- Js and Css -->
-       <link rel="stylesheet" href="index.css" />
-       <script src="index.js"></script>
+    <!-- Js and Css -->
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
     <footer>
-        <div><p> The footer goes here</p></div>
+      <div>
+        <p> The footer goes here</p>
+      </div>
     </footer>
   </div><!-- container -->
-  </body>
+</body>
 
-  <!-- <img id="main-image" src="https://live.staticflickr.com/6003/6198741820_ebb42d5f9c_b.jpg" 
+<!-- <img id="main-image" src="https://live.staticflickr.com/6003/6198741820_ebb42d5f9c_b.jpg" 
     alt="Andrew Wyeth: Christina's World" width="1024" height="681" 
     class="mx-auto h-full max-h-[500px] w-full rounded-t-sm object-contain" data-v-1049336d="">-->
+
 </html>
