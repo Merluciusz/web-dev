@@ -1,0 +1,35 @@
+#nav ul{
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    display: block;
+}
+#nav li{
+    float: left;
+    padding:0 10px;
+    margin: 2px;
+    background-color: black;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: white
+}
+#nav li a:hover{   
+    color: red;
+}
+.section{
+    border: 1px solid#ddd;
+}
+.container{
+    max-width: 1040px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+/* #pagetitle{
+    float: right;
+    margin: 2px;
+} */
