@@ -1,4 +1,10 @@
+
+
+// var section = document.querySelectorAll('.section');
+// console.log(section);
+
 checkImage();
+checkDescription();
 
 function checkImage() {
   var imgList = document.getElementsByTagName("img");
@@ -12,4 +18,16 @@ function checkImage() {
       console.log("image clicked");
     };
   }
-}
+}//checkImage()
+
+function checkDescription() {
+  var descList = document.getElementsByClassName("description");
+  for (var i = 0; i < descList.length; i++) {
+    descList[i].onclick = function () {
+      window.open(this.innerHTML, 
+        "Description", 
+        "width=640, height=480");
+      console.log("description clicked"+this.textContent);
+    }   
+  }  
+}//checkDescription()
