@@ -22,5 +22,5 @@ var spot = document.getElementById('spot');
 spot.innerText=`varNum is: ${varNum} \n letNum: ${letNum} \n constNum is: ${constNum} \n`;
 
 
-
+// new comment added
 
