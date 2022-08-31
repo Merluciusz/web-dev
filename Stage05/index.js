@@ -15,12 +15,14 @@ const myfunc = () => {
     let name = 'Frank';
 
     return [
-        () => `Miauu ${name}`,
-        (newName) => name = newName
+        () => `Miauu ${name}`,// Getter 
+        (newName) => name = newName// Setter
     ];
 }
 
 const [catSound, newName] = myfunc();
+const funArray = myfunc();
+console.log(funArray[0].call());
 
 console.log(catSound());
 newName('Ginger');
