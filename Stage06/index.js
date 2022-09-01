@@ -45,5 +45,5 @@ document.querySelector('form').addEventListener('submit',
         console.log(x);
     });
 
-// console.log(`let info final value is ${info}`);
+ console.log(`let info final value is ${info}`);
 
