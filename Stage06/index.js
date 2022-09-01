@@ -27,7 +27,6 @@ document.querySelector('form').addEventListener('submit',
         }
         // finnaly push the task in the array
         //console.log(`task is ${JSON.parse(localStorage.getItem('tasks'))}`);
-        e.preventDefault();
         tasks.push(task);
 
         // set the array in the local 
@@ -40,7 +39,11 @@ document.querySelector('form').addEventListener('submit',
         e.preventDefault();
     })
 
-    const tasksList = localStorage.getItem('tasks');
-    console.log(tasksList);
+    const tasksList = JSON.parse(localStorage.getItem('tasks')) ;
+
+    tasksList.forEach(x => {
+        console.log(x);
+    });
+
 // console.log(`let info final value is ${info}`);
 
