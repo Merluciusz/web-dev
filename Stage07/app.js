@@ -69,6 +69,9 @@ function addTask(e) {
     e.preventDefault();
 }
 
+// Some modifications -------------
+
+// End of -------------------------
 function storeTaskInLocalStorage(task) {
     let tasks;
     if (localStorage.getItem('tasks') === null) {
