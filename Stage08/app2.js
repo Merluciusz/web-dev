@@ -24,4 +24,4 @@ console.log(stud.greeting());
 console.log(stud.getAge());
 
 console.log(Student.getClass());
-console.log(stud.getClass());
+
