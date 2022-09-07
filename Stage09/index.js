@@ -5,13 +5,9 @@ document.getElementById("button3").addEventListener("click", getApiData);
 function getText(e) {
   // To be used with a live service. will not accept a location on the disk
   fetch("test.txt")
-    .then(function (response) {
-      return response.text();
-    })
-    .then(function (text) {
-      document.getElementById("output").innerHTML = text;
-    })
-    .catch((err) => console.log(err));
+    .then(response => response.text())
+    .then(text => document.getElementById("output").innerHTML = text)
+    .catch(err => console.log(err));
 }
 
 function getJason(e) {
@@ -29,18 +25,13 @@ function getJason(e) {
   // }
 
   fetch("https://jsonplaceholder.typicode.com/todos")
-    .then(function (res) {
-      return res.json();
-    })
-    .then(function (data) {
-      //console.log(data);
+    .then(res => res.json())
+    .then(data => {
       let output = "";
-      data.forEach(function (post) {
-        output += `<li>${post.title}</li>`;
-      });
+      data.forEach(post => output += `<li>${post.title}</li>`);
       document.getElementById("output").innerHTML = output;
     })
-    .catch((err) => console.log(err));
+    .catch(err => console.log(err));
 }
 
 function getApiData(e) {
