@@ -7,14 +7,14 @@ const ui = new UI();
 async function getUser(e) {
   // To be used with a live service. will not accept a location on the disk
   const user = document.getElementById("userinput").value;
-
   if (user !== "") {
     const profileResponse = await fetch(`https://api.github.com/users/${user}`);
     const profile = await profileResponse
       .json()
       .then(user => ui.showProfile(user));
+      console.log(typeof profile);
   }
-
+  
   //   fetch(`https://api.github.com/users/${user}`)
   //     .then(response => response.json())
   //     .then(user => document.getElementById("output").innerHTML = `<li>${user.login}</li><li>${user.id}</li><li>${user.url}</li>`)
